@@ -864,7 +864,7 @@ function eliminarDeDB(id, cb) {
 /* ── FOLIO ── */
 function updateFolio() {
   const tenant = document.getElementById('f-tenant').value;
-  const sfx = tenant === 'Estructura' ? 'TEST' : tenant === 'Refuerzo' ? 'TREF' : 'T???';
+  const sfx = tenant === 'Estructura' ? 'TEST' : tenant === 'Refuerzo' ? 'REFUERZO' : 'T???';
   const num = String(folioCounter).padStart(4, '0');
   document.getElementById('folio-preview').textContent = `SORG-TAB${num}-${sfx}`;
 }
